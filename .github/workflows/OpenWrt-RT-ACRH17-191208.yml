@@ -95,11 +95,11 @@ jobs:
       - name: Upload packages
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt packages
+          name: OpenWrt-RT-ACRH17-packages
           path: openwrt/bin/packages
 
       - name: Upload targets
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt firmware
+          name: OpenWrt-RT-ACRH17
           path: openwrt/bin/targets
