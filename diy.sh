@@ -11,3 +11,5 @@
 git clone https://github.com/Ameykyl/luci-app-koolproxyR.git  package/luci-app-koolproxyR
 git clone https://github.com/tty228/luci-app-serverchan.git  package/luci-app-serverchan
 git clone https://github.com/jw8013/ddns-scripts_dnspod.git  package/ddns-scripts_dnspod
+git clone https://github.com/pymumu/smartdns.git
+git clone https://github.com/pymumu/luci-app-smartdns.git
