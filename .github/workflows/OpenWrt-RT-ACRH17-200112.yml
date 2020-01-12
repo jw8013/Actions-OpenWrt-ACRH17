@@ -5,7 +5,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: OpenWrt-RT-ACRH17-191208
+name: OpenWrt-RT-ACRH17-200112
 
 on:
   #  release:
@@ -14,11 +14,11 @@ on:
     branches:
       - master
     paths:
-      - "RT-ACRH17-191208.config"
+      - "RT-ACRH17-200112.config"
   #  schedule:
   #    - cron: 0 20 * * *
-  #  watch:
-  #    types: [started]
+  watch:
+    types: [started]
 
 jobs:
   build:
@@ -70,7 +70,7 @@ jobs:
 
       - name: Load custom configuration
         env:
-          CONFIG_FILE: "RT-ACRH17-191208.config"
+          CONFIG_FILE: "RT-ACRH17-200112.config"
         run: |
           [ -e files ] && mv files openwrt/files
           [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
